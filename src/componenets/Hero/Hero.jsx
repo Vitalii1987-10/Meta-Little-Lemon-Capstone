@@ -57,8 +57,16 @@ const Hero = () => {
           >
           Reserve a table
           </Button>
-          <Box>
-            <img src={pic} alt="" />
+          <Box 
+            justifyContent={'center'}
+            sx={{
+              position: 'absolute', 
+              left: 810,
+              // top: -370
+              top: 100
+            }}
+          >
+            <img className='heroPic' src={pic} alt="" />
           </Box>
       </Box>
     </>
