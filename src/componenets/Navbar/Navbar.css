@@ -1,0 +1,16 @@
+.logoImg {
+  /* max-height: 80px; */
+  height: auto;
+  width: 30%;
+}
+
+.border {
+  border: 5px;
+  border-style: solid;
+}
+
+.typo {
+  /* border: 5px;
+  border-style: solid; */
+  max-width: 700px;
+}
