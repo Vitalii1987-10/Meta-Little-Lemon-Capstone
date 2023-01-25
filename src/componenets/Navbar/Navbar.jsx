@@ -31,19 +31,20 @@ function ResponsiveAppBar() {
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             <Typography
-              className='typo'
+              // className='typo'
               variant="h6"
               noWrap
               component="a"
               href="/"
               sx={{
                 mr: 2,
+                ml: 22,
                 display: { xs: 'none', md: 'flex' },
                 fontFamily: 'monospace',
                 fontWeight: 700,
                 letterSpacing: '.3rem',
                 color: 'inherit',
-                textDecoration: 'none',
+                textDecoration: 'none', 
               }}
             >
               <img className='logoImg' src={logo} alt="Little Lemon" />
@@ -103,15 +104,18 @@ function ResponsiveAppBar() {
               }}
             >
               <img className='logoImg' src={logo} alt="Little Lemon" />
-            </Typography>
-            <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+            </Typography >
+            <Box justifyContent='right' sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, mr: 22}}>
               {pages.map((page) => (
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
-                  sx={{ gap: 2, my: 2, color: '#333333', display: 'inline-block', fontSize: 16, pt: 1, mr: 3}}
+                  sx={{ gap: 2, my: 2, color: '#333333', display: 'inline-block', fontSize: 16, pt: 1}}
                 >
-                  {page}
+                  <Typography
+                  noWrap>
+                    {page}
+                  </Typography>
                 </Button>
               ))}
             </Box>
