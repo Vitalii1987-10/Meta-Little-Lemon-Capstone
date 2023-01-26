@@ -1,140 +1,76 @@
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
+import * as MUI from '../../MUI'
 import pic from '../../assets/Avatar.png'
 import Container from '@mui/material/Container';
 import './Hero.css'
 
 const Hero = () => {
   return (
-    <>
-      <Container maxWidth="xl">
-        <Box className='background' sx={{
-          color: '#495E57',
-          width: 1,
-          height: 500,
-        }}>
-          <Typography 
+    <div className='background'>
+      <MUI.Container maxWidth="xl">
+        <MUI.Box className='background'>
+          <MUI.Typography 
             variant='h1' 
             component='h2'
             sx={{
-              ml: 25, 
+              ml: 22, 
               color: '#F4CE14',
             }} 
           >
             Little Lemon
-          </Typography>
-          <Typography 
+          </MUI.Typography>
+          <MUI.Typography 
             variant='h2' 
             component='h3'
             sx={{
-              ml: 25, 
+              ml: 22, 
               color: '#EDEFEE'
             }} 
           >
             Chicago
-          </Typography>
-          <Typography 
+          </MUI.Typography>
+          <MUI.Typography 
             variant='body1' 
             component='p'
             sx={{
-              ml: 26, 
+              ml: 22, 
               color: '#EDEFEE', 
               maxWidth: 200
             }} 
           >
             We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
-          </Typography>
-          <Button 
+          </MUI.Typography>
+          <MUI.Button 
             variant='outlined'
             sx={{
-              ml: 26, 
+              ml: 22, 
               backgroundColor: '#F4CE14', 
               color: '#333333', 
               mt: 4, 
               borderRadius: 4, 
               minHeight: 50,
               fontSize: 16,
+              ':hover': {
+                bgcolor: '#333333', 
+                color: '#EDEFEE',
+                borderColor: '#333333'
+              }
             }} 
             >
             Reserve a table
-            </Button>
-            <Box 
+            </MUI.Button>
+            <MUI.Box 
               justifyContent={'center'}
               sx={{
-                position: 'absolute', 
-                left: 810,
-                // top: -370
-                top: 100
+                position: 'relative', 
+                left: 770,
+                top: -350
               }}
             >
               <img className='heroPic' src={pic} alt="" />
-            </Box>
-        </Box>
-      </Container>
-      {/* <Box className='background' sx={{
-        color: '#495E57',
-        width: 1,
-        height: 500,
-      }}>
-        <Typography 
-          variant='h1' 
-          component='h2'
-          sx={{
-            ml: 25, 
-            color: '#F4CE14',
-          }} 
-        >
-          Little Lemon
-        </Typography>
-        <Typography 
-          variant='h2' 
-          component='h3'
-          sx={{
-            ml: 25, 
-            color: '#EDEFEE'
-          }} 
-        >
-          Chicago
-        </Typography>
-        <Typography 
-          variant='body1' 
-          component='p'
-          sx={{
-            ml: 26, 
-            color: '#EDEFEE', 
-            maxWidth: 200
-          }} 
-        >
-          We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
-        </Typography>
-        <Button 
-          variant='outlined'
-          sx={{
-            ml: 26, 
-            backgroundColor: '#F4CE14', 
-            color: '#333333', 
-            mt: 4, 
-            borderRadius: 4, 
-            minHeight: 50,
-            fontSize: 16,
-          }} 
-          >
-          Reserve a table
-          </Button>
-          <Box 
-            justifyContent={'center'}
-            sx={{
-              position: 'absolute', 
-              left: 810,
-              // top: -370
-              top: 100
-            }}
-          >
-            <img className='heroPic' src={pic} alt="" />
-          </Box>
-      </Box> */}
-    </>
+            </MUI.Box>
+        </MUI.Box>
+      </MUI.Container>
+    </div>
   )
 }
 export default Hero

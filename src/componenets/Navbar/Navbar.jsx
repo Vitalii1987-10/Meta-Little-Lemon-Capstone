@@ -1,14 +1,5 @@
 import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
-import MenuItem from '@mui/material/MenuItem';
+import * as MUI from '../../MUI'
 import logo from '../../assets/Asset 16@4x.png'
 import './Navbar.css'
 
@@ -27,11 +18,10 @@ function ResponsiveAppBar() {
   };
 
   return (
-      <AppBar position="static" color='inherit' elevation={0}>
-        <Container maxWidth="xl">
-          <Toolbar disableGutters>
-            <Typography
-              // className='typo'
+      <MUI.AppBar position="static" color='inherit' elevation={0}>
+        <MUI.Container maxWidth="xl">
+          <MUI.Toolbar disableGutters>
+            <MUI.Typography
               variant="h6"
               noWrap
               component="a"
@@ -48,10 +38,10 @@ function ResponsiveAppBar() {
               }}
             >
               <img className='logoImg' src={logo} alt="Little Lemon" />
-            </Typography>
+            </MUI.Typography>
 
-            <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-              <IconButton
+            <MUI.Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+              <MUI.IconButton
                 size="large"
                 aria-label="account of current user"
                 aria-controls="menu-appbar"
@@ -59,9 +49,9 @@ function ResponsiveAppBar() {
                 onClick={handleOpenNavMenu}
                 color="inherit"
               >
-                <MenuIcon />
-              </IconButton>
-              <Menu
+                <MUI.MenuIcon />
+              </MUI.IconButton>
+              <MUI.Menu
                 id="menu-appbar"
                 anchorEl={anchorElNav}
                 anchorOrigin={{
@@ -80,13 +70,13 @@ function ResponsiveAppBar() {
                 }}
               >
                 {pages.map((page) => (
-                  <MenuItem key={page} onClick={handleCloseNavMenu}>
-                    <Typography>{page}</Typography>
-                  </MenuItem>
+                  <MUI.MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <MUI.Typography>{page}</MUI.Typography>
+                  </MUI.MenuItem>
                 ))}
-              </Menu>
-            </Box>
-            <Typography
+              </MUI.Menu>
+            </MUI.Box>
+            <MUI.Typography
               variant="h5"
               noWrap
               component="a"
@@ -104,24 +94,24 @@ function ResponsiveAppBar() {
               }}
             >
               <img className='logoImg' src={logo} alt="Little Lemon" />
-            </Typography >
-            <Box justifyContent='right' sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, mr: 22}}>
+            </MUI.Typography >
+            <MUI.Box justifyContent='right' sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, mr: 22}}>
               {pages.map((page) => (
-                <Button
+                <MUI.Button
                   key={page}
                   onClick={handleCloseNavMenu}
                   sx={{ gap: 2, my: 2, color: '#333333', display: 'inline-block', fontSize: 16, pt: 1}}
                 >
-                  <Typography
+                  <MUI.Typography
                   noWrap>
                     {page}
-                  </Typography>
-                </Button>
+                  </MUI.Typography>
+                </MUI.Button>
               ))}
-            </Box>
-          </Toolbar>
-        </Container>
-      </AppBar>
+            </MUI.Box>
+          </MUI.Toolbar>
+        </MUI.Container>
+      </MUI.AppBar>
   );
 }
 export default ResponsiveAppBar;
