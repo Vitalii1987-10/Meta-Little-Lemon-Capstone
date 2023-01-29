@@ -19,7 +19,7 @@ function ResponsiveAppBar() {
 
   return (
       <MUI.AppBar position="static" color='inherit' elevation={0}>
-        <MUI.Container maxWidth="xl">
+        <MUI.Container className='container' maxWidth="xl">
           <MUI.Toolbar disableGutters>
             <MUI.Typography
               variant="h6"

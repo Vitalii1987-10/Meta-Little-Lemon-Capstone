@@ -1,13 +1,12 @@
 import * as MUI from '../../MUI'
 import pic from '../../assets/Avatar.png'
-import Container from '@mui/material/Container';
 import './Hero.css'
 
 const Hero = () => {
   return (
     <div className='background'>
       <MUI.Container maxWidth="xl">
-        <MUI.Box className='background'>
+        {/* <MUI.Box className='background'>
           <MUI.Typography 
             variant='h1' 
             component='h2'
@@ -63,12 +62,12 @@ const Hero = () => {
               sx={{
                 position: 'relative', 
                 left: 770,
-                top: -350
+                top: -370
               }}
             >
               <img className='heroPic' src={pic} alt="" />
             </MUI.Box>
-        </MUI.Box>
+        </MUI.Box> */}
       </MUI.Container>
     </div>
   )
