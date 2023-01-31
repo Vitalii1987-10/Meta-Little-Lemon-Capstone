@@ -1,6 +1,7 @@
 import * as MUI from '../../../MUI'
+import '../Highlights.css'
 
-const Card = ( { items } ) => {
+const HighlightsCard = ( { items } ) => {
   return (
     <>
     {items.map((item) => {
@@ -9,7 +10,12 @@ const Card = ( { items } ) => {
         <MUI.Grid 
           key={id}
           className='grid' 
+          item
           xl={4}
+          lg={4}
+          md={12}
+          xs={12}
+          sm={12}
           container
           justifyContent='center'
           >
@@ -18,16 +24,18 @@ const Card = ( { items } ) => {
               height: 500,
               width: 1/1.33,
               borderRadius: 10,
-              border: 2,
               backgroundColor: '#EDEFEE',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center'
             }}
             >
-              <img className='pic' src={img} alt="" />
+                <img className='pic' src={img} alt="" />
               <MUI.Box 
                 sx={{
                   display: 'flex',
                   justifyContent: 'space-around',
-                  pt: 3,
+                  marginTop: 5,
                 }}
               >
                 <MUI.Typography>
@@ -41,16 +49,20 @@ const Card = ( { items } ) => {
                 sx={{
                   display: 'flex',
                   justifyContent: 'space-around',
-                  maxWidth: 300,
-                  paddingLeft: 3.5,
-                  pt: 3,
+                  maxHeight: 70,
+                  marginTop: 5,
                 }}
               >
-                <MUI.Typography>
+                <MUI.Typography noWrap={true} sx={{height: 300, width: 1/1.33}}>
                   {description}
                 </MUI.Typography>
               </MUI.Box>
-              <MUI.Box sx={{pt: 5, pl: 3, display: 'flex'}}>
+              <MUI.Box
+                sx={{
+                  display: 'flex',
+                  justifyContent: 'space-around',
+                }}
+              >
                 <MUI.Button
                 variant='outlined'
                 sx={{
@@ -68,7 +80,7 @@ const Card = ( { items } ) => {
                 >
                   Order a delivery
                 </MUI.Button>
-                <MUI.DirectionsBikeIcon sx={{ml: 15, mt: 2}}></MUI.DirectionsBikeIcon>
+                <MUI.DirectionsBikeIcon sx={{pt: 2}}></MUI.DirectionsBikeIcon>
               </MUI.Box>
           </MUI.Box>
         </MUI.Grid>
@@ -79,4 +91,4 @@ const Card = ( { items } ) => {
 
 
 }
-export default Card
+export default HighlightsCard

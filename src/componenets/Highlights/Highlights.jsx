@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as MUI from '../../MUI'
-import Card from './Card/Card'
-import items from '../../data/Data'
+import Card from './Card/HighlightsCard'
+import items from './Card/data/HighlightsData'
 import './Highlights.css'
 
 const Highlights = () => {

@@ -10,4 +10,5 @@ export { default as Button } from '@mui/material/Button';
 export { default as Container } from '@mui/material/Container';
 export { default as Grid } from '@mui/material/Grid';
 export { default as DirectionsBikeIcon } from '@mui/icons-material/DirectionsBike';
+export { default as Rating } from '@mui/material/Rating';
 
