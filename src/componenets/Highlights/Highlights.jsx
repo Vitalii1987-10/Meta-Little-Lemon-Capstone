@@ -20,23 +20,42 @@ const Highlights = () => {
       }}
       >
           <MUI.Grid container spacing={2}>
-            <MUI.Grid xl={6}>
-              <MUI.Typography 
-              variant='h3'
-              component='h3'
-              sx={{
-                ml: 22,
-                color: '#333333', 
-              }}
+            <MUI.Grid 
+              item
+              xl={6}
+              lg={6}
+              md={12}
+              xs={12}
+              sm={12}
+              // sx={{border: 1}}
+              container
+              justifyContent='center'
               >
-                This week Specials!
-              </MUI.Typography>
+                <MUI.Typography 
+                variant='h3'
+                component='h3'
+                sx={{
+                  color: '#333333', 
+                }}
+                >
+                  This week Specials!
+                </MUI.Typography>
             </MUI.Grid>
-            <MUI.Grid container justifyContent={'right'} xl={6}>
+            <MUI.Grid 
+              item
+              xl={6}
+              lg={6}
+              md={12}
+              xs={12}
+              sm={12}
+              // sx={{border: 1}}
+              container
+              justifyContent='center'
+              alignItems='center'
+              >
               <MUI.Button 
                 variant='outlined'
                 sx={{
-                  mr: 25,
                   backgroundColor: '#F4CE14', 
                   color: '#333333', 
                   borderRadius: 4, 
