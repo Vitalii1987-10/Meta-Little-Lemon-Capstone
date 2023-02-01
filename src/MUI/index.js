@@ -11,4 +11,10 @@ export { default as Container } from '@mui/material/Container';
 export { default as Grid } from '@mui/material/Grid';
 export { default as DirectionsBikeIcon } from '@mui/icons-material/DirectionsBike';
 export { default as Rating } from '@mui/material/Rating';
+export { default as FacebookIcon} from '@mui/icons-material/Facebook';
+export { default as InstagramIcon } from '@mui/icons-material/Instagram';
+export { default as TwitterIcon } from '@mui/icons-material/Twitter';
+
+
+
 

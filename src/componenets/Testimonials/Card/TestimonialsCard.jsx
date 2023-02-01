@@ -107,42 +107,6 @@ const TestimonialsCard = ({ items }) => {
                 />
               </MUI.Box>
             </MUI.Grid>
-            {/* <MUI.Typography
-              variant='h4'
-              sx={{
-                ml: 10,
-              }}
-            >
-              Rating
-            </MUI.Typography> */}
-            {/* <MUI.Box
-              sx={{
-                display: 'flex',
-              }}
-            >
-              <MUI.Box
-                component='img'
-                src={pic}
-                alt=''
-                sx={{
-                  height: 120,
-                  width: 120
-                }}
-              />
-              <MUI.Box>
-                <MUI.Typography
-                  sx={{
-                    mt: 6,
-                    ml: 5
-                  }}
-                >
-                  {name}
-                </MUI.Typography>
-              </MUI.Box>
-            </MUI.Box> */}
-            {/* <MUI.Typography>
-              {rating}
-            </MUI.Typography> */}
           </MUI.Box>
         </MUI.Grid>
       )

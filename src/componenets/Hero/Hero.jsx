@@ -1,13 +1,12 @@
 import * as MUI from '../../MUI'
-import pic from '../../assets/Avatar.png'
+import img from '../../assets/Avatar.png'
 import './Hero.css'
-import { padding } from '@mui/system'
 
 const Hero = () => {
   return (
-    <div className='background'>
+    <div style={{backgroundColor: "#495E57"}}>
       <MUI.Container maxWidth="xl">
-        <MUI.Grid container spacing={0} sx={{paddingLeft: 0}}>
+        <MUI.Grid container spacing={0} sx={{paddingLeft: 15}}>
           <MUI.Grid
             item
             xl={6}
@@ -15,10 +14,14 @@ const Hero = () => {
             md={12}
             xs={12}
             sm={12}
+            // sx={{
+            //   border: 1
+            // }}
           >
             <MUI.Box
               sx={{
                 height: 480,
+                // border: 1
               }}
             >
               <MUI.Typography 
@@ -77,33 +80,19 @@ const Hero = () => {
             md={12}
             xs={12}
             sm={12}
-            // sx={{border: 1}}
-          >
-            <MUI.Box
             display='flex'
             justifyContent='center'
+          >
+            <MUI.Box
+              component='img'
+              src={img}
+              alt=''
               sx={{
-                height: 480,
-                // border: 1
+                borderRadius: 3
               }}
-            >
-              <img className='heroPic' src={pic} alt="" />
-            </MUI.Box>
+            />
           </MUI.Grid>
         </MUI.Grid>
-
-        {/* <MUI.Box className='background'>
-            <MUI.Box 
-              justifyContent={'center'}
-              sx={{
-                position: 'relative', 
-                left: 770,
-                top: -370
-              }}
-            >
-              <img className='heroPic' src={pic} alt="" />
-            </MUI.Box>
-        </MUI.Box> */}
       </MUI.Container>
     </div>
   )
