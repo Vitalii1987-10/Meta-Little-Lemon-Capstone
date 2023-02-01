@@ -5,7 +5,7 @@
 }
 
 .heroPic {
-    width: 35%;
-    /* max-width: 520px; */
+    width: 550px;
+    height: 550px;
     border-radius: 20px;
 }
