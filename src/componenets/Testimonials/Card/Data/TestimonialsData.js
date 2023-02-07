@@ -1,28 +1,31 @@
-import pic from './Avatar.png'
+import picCardOne from './Rating Card 1.jpg'
+import picCardTwo from './Avatar.png'
+import picCardThree from './Rating Card 3.jpg'
+import picCardFour from './Rating Card 4.jpg'
 
 const items = [
   {
     id: 1,
     name: 'Silas',
-    pic: pic,
+    pic: picCardOne,
     rating: 5
   },
   {
     id: 2,
     name: 'Eleanor',
-    pic: pic,
+    pic: picCardTwo,
     rating: 4
   }, 
   {
     id: 3,
     name: 'Oscar',
-    pic: pic,
+    pic: picCardThree,
     rating: 3
   },
   {
     id: 4,
     name: 'Eloise',
-    pic: pic,
+    pic: picCardFour,
     rating: 5
   }
 ]

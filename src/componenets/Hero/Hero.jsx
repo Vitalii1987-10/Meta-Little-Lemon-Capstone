@@ -1,12 +1,12 @@
 import * as MUI from '../../MUI'
-import img from '../../assets/Avatar.png'
+import img from '../../assets/head_chef.jpg'
 import './Hero.css'
 
-const Hero = () => {
+const Hero = ({handleOpenBookTable}) => {
   return (
     <div style={{backgroundColor: "#495E57"}}>
       <MUI.Container maxWidth="xl">
-        <MUI.Grid container spacing={0} sx={{paddingLeft: 15}}>
+        <MUI.Grid container spacing={0}>
           <MUI.Grid
             item
             xl={6}
@@ -14,16 +14,8 @@ const Hero = () => {
             md={12}
             xs={12}
             sm={12}
-            // sx={{
-            //   border: 1
-            // }}
           >
-            <MUI.Box
-              sx={{
-                height: 480,
-                // border: 1
-              }}
-            >
+            <MUI.Box>
               <MUI.Typography 
                 variant='h1' 
                 component='h2'
@@ -55,6 +47,7 @@ const Hero = () => {
               </MUI.Typography>
               <MUI.Button 
                 variant='outlined'
+                onClick={handleOpenBookTable}
                 sx={{
                   backgroundColor: '#F4CE14', 
                   color: '#333333', 
@@ -88,6 +81,8 @@ const Hero = () => {
               src={img}
               alt=''
               sx={{
+                maxWidth: '100%',
+                height: 'auto',
                 borderRadius: 3
               }}
             />

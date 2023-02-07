@@ -14,7 +14,14 @@ export { default as Rating } from '@mui/material/Rating';
 export { default as FacebookIcon} from '@mui/icons-material/Facebook';
 export { default as InstagramIcon } from '@mui/icons-material/Instagram';
 export { default as TwitterIcon } from '@mui/icons-material/Twitter';
-
-
-
+export { default as InputLabel } from '@mui/material/InputLabel';
+export { default as FormControl } from '@mui/material/FormControl';
+export { default as Select } from '@mui/material/Select';
+export { default as Stack } from '@mui/material/Stack';
+export { default as TextField } from '@mui/material/TextField';
+export { default as TextareaAutosize} from '@mui/base/TextareaAutosize';
+export { default as Dialog }from '@mui/material/Dialog';
+export { default as DialogTitle} from '@mui/material/DialogTitle';
+export { default as Divider} from '@mui/material/Divider';
+export { default as FormHelperText} from '@mui/material/FormHelperText';
 

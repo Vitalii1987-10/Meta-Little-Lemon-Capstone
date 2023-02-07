@@ -1,6 +1,5 @@
 import { green } from '@mui/material/colors';
 import * as MUI from '../../../MUI'
-// import { green } from '@mui/material/colors';
 import '../Highlights.css'
 
 const HighlightsCard = ( { items } ) => {
@@ -20,6 +19,9 @@ const HighlightsCard = ( { items } ) => {
           sm={12}
           container
           justifyContent='center'
+          // sx={{
+          //   border: 1
+          // }}
           >
           <MUI.Box 
             sx={{
@@ -50,7 +52,7 @@ const HighlightsCard = ( { items } ) => {
                     alt=''
                     sx={{
                       height: 120,
-                      width: 300,
+                      width: 200,
                       borderRadius: 3
                     }}
                   />
@@ -161,58 +163,6 @@ const HighlightsCard = ( { items } ) => {
                   </MUI.Box>
                 </MUI.Box>
               </MUI.Grid>
-                {/* <img className='pic' src={img} alt="" />
-              <MUI.Box 
-                sx={{
-                  display: 'flex',
-                  justifyContent: 'space-around',
-                  marginTop: 5,
-                }}
-              >
-                <MUI.Typography>
-                  {title}
-                </MUI.Typography>
-                <MUI.Typography>
-                  ${price}
-                </MUI.Typography>
-              </MUI.Box>
-              <MUI.Box 
-                sx={{
-                  display: 'flex',
-                  justifyContent: 'space-around',
-                  maxHeight: 70,
-                  marginTop: 5,
-                }}
-              >
-                <MUI.Typography noWrap={true} sx={{height: 300, width: 1/1.33}}>
-                  {description}
-                </MUI.Typography>
-              </MUI.Box>
-              <MUI.Box
-                sx={{
-                  display: 'flex',
-                  justifyContent: 'space-around',
-                }}
-              >
-                <MUI.Button
-                variant='outlined'
-                sx={{
-                  backgroundColor: '#F4CE14', 
-                  color: '#333333', 
-                  borderRadius: 4, 
-                  minHeight: 50,
-                  fontSize: 13,
-                  ':hover': {
-                    bgcolor: '#333333', 
-                    color: '#EDEFEE',
-                    borderColor: '#333333'
-                  }
-                }} 
-                >
-                  Order a delivery
-                </MUI.Button>
-                <MUI.DirectionsBikeIcon sx={{pt: 2}}></MUI.DirectionsBikeIcon>
-              </MUI.Box> */}
           </MUI.Box>
         </MUI.Grid>
         )

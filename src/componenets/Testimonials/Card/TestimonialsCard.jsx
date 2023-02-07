@@ -1,117 +1,109 @@
-import { width } from '@mui/system'
-import * as MUI from '../../../MUI'
-import './TestimonialsCard.css'
+import * as MUI from "../../../MUI";
+import "./TestimonialsCard.css";
 
 const TestimonialsCard = ({ items }) => {
   return (
     <>
-    {items.map((item) => {
-      const {id, name, pic, rating} = item
-      return (
-        <MUI.Grid
-          key={id}
-          className='grid'
-          item
-          xl={3}
-          lg={6}
-          md={12}
-          xs={12}
-          sm={12}
-          container
-          justifyContent='center'
-        >
-          <MUI.Box
-            sx={{
-              height: 300,
-              width: 250,
-              borderRadius: 10,
-              backgroundColor: '#EDEFEE',
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center'
-             }}
-          >
-            <MUI.Grid
+      {items.map((item) => {
+        const { id, name, pic, rating } = item;
+        return (
+          <MUI.Grid
+            key={id}
+            className="grid"
             item
-            xl={12}
+            xl={3}
+            lg={6}
+            md={12}
+            xs={12}
+            sm={12}
+            container
+            justifyContent='center'
+          >
+            <MUI.Box
+              sx={{
+                height: 300,
+                width: 250,
+                borderRadius: 10,
+                backgroundColor: "#EDEFEE",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+              }}
             >
-              <MUI.Box
-                display='flex'
-                justifyContent='center'
-                alignItems='center'
-                sx={{
-                  height: 100
-                }}
-              >
-                <MUI.Typography
-                  variant='h4'
-                >
-                  Rating
-                </MUI.Typography>
-              </MUI.Box>
-              <MUI.Box
-                display='flex'
-                justifyContent='center'
-                alignItems='center'
-                sx={{
-                  height: 100,
-                }}
-              >
+              <MUI.Grid item xl={12}>
                 <MUI.Box
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
                   sx={{
                     height: 100,
-                    width: 100,
                   }}
                 >
-                  <MUI.Box 
-                    component='img'
-                    src={pic}
-                    alt=''
+                  <MUI.Typography variant="h4">Rating</MUI.Typography>
+                </MUI.Box>
+                <MUI.Box
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                  sx={{
+                    height: 100,
+                  }}
+                >
+                  <MUI.Box
                     sx={{
                       height: 100,
-                      borderRadius: 3
-                    }}
-                  />
-                </MUI.Box>
-                <MUI.Box
-                  display='flex'
-                  justifyContent='center'
-                  alignItems='center'
-                  sx={{
-                    height: 100,
-                    width: 100,
-                  }}
-                >
-                  <MUI.Typography
-                    sx={{
-                      ml: 4
+                      width: 100,
                     }}
                   >
-                    {name}
-                  </MUI.Typography>
+                    <MUI.Box
+                      component="img"
+                      src={pic}
+                      alt=""
+                      sx={{
+                        height: 100,
+                        borderRadius: 3,
+                      }}
+                    />
+                  </MUI.Box>
+                  <MUI.Box
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    sx={{
+                      height: 100,
+                      width: 100,
+                    }}
+                  >
+                    <MUI.Typography
+                      sx={{
+                        ml: 4,
+                      }}
+                    >
+                      {name}
+                    </MUI.Typography>
+                  </MUI.Box>
                 </MUI.Box>
-              </MUI.Box>
-              <MUI.Box
-                display='flex'
-                justifyContent='center'
-                alignItems='center'
-                sx={{
-                  height: 100
-                }}
-              >
-                <MUI.Rating
-                  name='read-only'
-                  value={rating}
-                  readOnly
-                  size='large'
-                />
-              </MUI.Box>
-            </MUI.Grid>
-          </MUI.Box>
-        </MUI.Grid>
-      )
-    })}
+                <MUI.Box
+                  display="flex"
+                  justifyContent="center"
+                  alignItems="center"
+                  sx={{
+                    height: 100,
+                  }}
+                >
+                  <MUI.Rating
+                    name="read-only"
+                    value={rating}
+                    readOnly
+                    size="large"
+                  />
+                </MUI.Box>
+              </MUI.Grid>
+            </MUI.Box>
+          </MUI.Grid>
+        );
+      })}
     </>
-  )
-}
-export default TestimonialsCard
+  );
+};
+export default TestimonialsCard;
