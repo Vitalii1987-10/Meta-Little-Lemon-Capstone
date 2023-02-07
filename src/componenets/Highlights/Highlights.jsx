@@ -17,7 +17,7 @@ const Highlights = () => {
         maxWidth="xl"
         sx={{
           marginTop: 10,
-          // border: 1
+          border: 1
         }}
       >
         <MUI.Grid container spacing={2}>

@@ -5,7 +5,12 @@ import './Hero.css'
 const Hero = ({handleOpenBookTable}) => {
   return (
     <div style={{backgroundColor: "#495E57"}}>
-      <MUI.Container maxWidth="xl">
+      <MUI.Container maxWidth="xl"
+                  sx={{
+                    border: 1,
+                  }}
+
+      >
         <MUI.Grid container spacing={0}>
           <MUI.Grid
             item
@@ -14,6 +19,8 @@ const Hero = ({handleOpenBookTable}) => {
             md={12}
             xs={12}
             sm={12}
+            display={'flex'}
+            justifyContent={'center'}
           >
             <MUI.Box>
               <MUI.Typography 
